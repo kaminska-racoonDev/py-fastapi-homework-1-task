@@ -1,9 +1,12 @@
-from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
-
+from contextlib import asynccontextmanager
 from database.session import init_db, close_db
 from routes import movie_router
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 
 @asynccontextmanager

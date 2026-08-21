@@ -1,6 +1,8 @@
 from pydantic import BaseModel, ConfigDict
 from datetime import date
 
+# schemas
+
 
 class MovieDetailResponseSchema(BaseModel):
     id: int
