@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict
 from datetime import date
 
-# schemas
+# ! MOVIES.py IS HERE. These are schemas
 
 
 class MovieDetailResponseSchema(BaseModel):
